@@ -10,7 +10,7 @@ export function Hero() {
         alt="Модерна дневна с климатик"
         width={1024}
         height={576}
-        className="absolute inset-0 -z-10 size-full object-cover opacity-55"
+        className="absolute inset-0 -z-10 size-full object-cover object-right opacity-55"
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-foreground via-foreground/70 to-transparent" />
       <div className="mx-auto flex min-h-[78vh] max-w-7xl flex-col justify-center px-6 py-24 text-background">
