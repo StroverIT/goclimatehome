@@ -35,7 +35,7 @@ const brands = [
 function BrandItem({ name, logo }: { name: string; logo: string }) {
   return (
     <div
-      className="flex h-14 w-40 shrink-0 items-center justify-center md:h-16 md:w-48 lg:h-[4.5rem] lg:w-56"
+      className="flex h-9 w-24 shrink-0 items-center justify-center sm:h-10 sm:w-28 md:h-11 md:w-32"
       aria-hidden
     >
       <img
@@ -54,13 +54,13 @@ export function BrandMarquee() {
   return (
     <section
       aria-label="Водещи марки климатици"
-      className="relative border-y border-border bg-background py-12 md:py-14"
+      className="relative border-y border-border bg-background py-8 md:py-10"
     >
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-linear-to-r from-background to-transparent md:w-24" />
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-linear-to-l from-background to-transparent md:w-24" />
 
       <div className="overflow-hidden">
-        <div className="flex w-max animate-marquee items-center gap-16 px-7 motion-reduce:animate-none md:gap-24 md:px-10">
+        <div className="flex w-max animate-marquee items-center gap-10 px-6 motion-reduce:animate-none md:gap-14 md:px-8">
           {brands.map(({ name, logo }) => (
             <BrandItem key={`marquee-a-${name}`} name={name} logo={logo} />
           ))}
