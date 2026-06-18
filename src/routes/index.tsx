@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { BrandMarquee } from "@/components/home/BrandMarquee";
 import { Hero } from "@/components/home/Hero";
 import { CategoryGrid } from "@/components/home/CategoryGrid";
 import { ProductSwiper } from "@/components/home/ProductSwiper";
@@ -20,6 +21,7 @@ function HomePage() {
   return (
     <>
       <Hero />
+      <BrandMarquee />
       <CategoryGrid />
       <ProductSwiper eyebrow="Най-нови" title="Току-що добавени" products={latest()} />
       <div className="bg-secondary/40">
